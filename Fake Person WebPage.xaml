@@ -1,0 +1,315 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Fake_Person_WebPage" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="OutBrowser" Type="OutArgument(ui:Browser)" />
+  </x:Members>
+  <sap:VirtualizedContainerService.HintSize>721,2242</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="46">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="[BrowserType.Chrome]" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,1835" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[OutBrowser]" Url="https://www.fakenamegenerator.com/">
+    <ui:OpenBrowser.Body>
+      <ActivityAction x:TypeArguments="x:Object">
+        <ActivityAction.Argument>
+          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+        </ActivityAction.Argument>
+        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="401,1734" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Int32" Name="RanNumber" />
+            <Variable x:TypeArguments="s:String[]" Name="Gender" />
+            <Variable x:TypeArguments="s:String[]" Name="NameSet" />
+            <Variable x:TypeArguments="s:String[]" Name="Country" />
+            <Variable x:TypeArguments="x:String" Name="RandomGend" />
+            <Variable x:TypeArguments="x:Int32" Name="RanNumber2" />
+            <Variable x:TypeArguments="x:String" Name="RandomNameSet" />
+            <Variable x:TypeArguments="x:String" Name="RandomCountry" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="359,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+          <Assign DisplayName="Generate random numbers 0,1,2" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[RanNumber]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[New Random().Next(0,3)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Initalize the gender Array" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="s:String[]">[Gender]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="s:String[]">[{"Random","Male","Female"}]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Index the gender" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[RandomGend]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[Gender(RanNumber)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Generate random numbers 0,1,2,3,4,5" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[RanNumber2]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[New Random().Next(0,6)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Initialize the Name Set" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign.To>
+              <OutArgument x:TypeArguments="s:String[]">[NameSet]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="s:String[]">[{"American","Brazil","Chinese","Frence","German","Igbo"}]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Index the Name Set" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[RandomNameSet]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[NameSet(RanNumber2)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Initalize the County" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="s:String[]">[Country]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="s:String[]">[{"Australia","Canada","Estonia","Greenland","South Africa","Uruguay"}]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Index the Country" sap:VirtualizedContainerService.HintSize="359,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[RandomCountry]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[Country(RanNumber2)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Gender" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[RandomGend]">
+            <ui:SelectItem.Items>
+              <scg:List x:TypeArguments="x:String" Capacity="4">
+                <x:String>Random</x:String>
+                <x:String>Male</x:String>
+                <x:String>Female</x:String>
+              </scg:List>
+            </ui:SelectItem.Items>
+            <ui:SelectItem.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="06f49c48-090a-4916-ab86-4f3f2b2a8401" InformativeScreenshot="b5b6de482a5a17a70cbb237067130fdd" Selector="[&quot;&lt;webctrl tag='SELECT' /&gt;&lt;webctrl tag='OPTION' aaname='&quot;+RandomGend+&quot;' /&gt;&quot;]">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:SelectItem.Target>
+          </ui:SelectItem>
+          <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Random Nameset" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[RandomNameSet]">
+            <ui:SelectItem.Items>
+              <scg:List x:TypeArguments="x:String" Capacity="64">
+                <x:String>American</x:String>
+                <x:String>Arabic</x:String>
+                <x:String>Australian</x:String>
+                <x:String>Brazil</x:String>
+                <x:String>Chechen (Latin)</x:String>
+                <x:String>Chinese</x:String>
+                <x:String>Chinese (Traditional)</x:String>
+                <x:String>Croatian</x:String>
+                <x:String>Czech</x:String>
+                <x:String>Danish</x:String>
+                <x:String>Dutch</x:String>
+                <x:String>England/Wales</x:String>
+                <x:String>Eritrean</x:String>
+                <x:String>Finnish</x:String>
+                <x:String>French</x:String>
+                <x:String>German</x:String>
+                <x:String>Greenland</x:String>
+                <x:String>Hispanic</x:String>
+                <x:String>Hobbit</x:String>
+                <x:String>Hungarian</x:String>
+                <x:String>Icelandic</x:String>
+                <x:String>Igbo</x:String>
+                <x:String>Italian</x:String>
+                <x:String>Japanese</x:String>
+                <x:String>Japanese (Anglicized)</x:String>
+                <x:String>Klingon</x:String>
+                <x:String>Ninja</x:String>
+                <x:String>Norwegian</x:String>
+                <x:String>Persian</x:String>
+                <x:String>Polish</x:String>
+                <x:String>Russian</x:String>
+                <x:String>Russian (Cyrillic)</x:String>
+                <x:String>Scottish</x:String>
+                <x:String>Slovenian</x:String>
+                <x:String>Swedish</x:String>
+                <x:String>Thai</x:String>
+                <x:String>Vietnamese</x:String>
+              </scg:List>
+            </ui:SelectItem.Items>
+            <ui:SelectItem.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="196f5e74-c259-48c0-bdb0-f7e78c9c4366" InformativeScreenshot="386f93365301c8d600ace6a7a892ad19" Selector="[&quot;&lt;webctrl id='n' tag='SELECT' /&gt;&lt;webctrl tag='OPTION' aaname='&quot;+RandomNameSet+&quot;' /&gt;&quot;]">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:SelectItem.Target>
+          </ui:SelectItem>
+          <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Random Country" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[RandomCountry]">
+            <ui:SelectItem.Items>
+              <scg:List x:TypeArguments="x:String" Capacity="32">
+                <x:String>Australia</x:String>
+                <x:String>Austria</x:String>
+                <x:String>Belgium</x:String>
+                <x:String>Brazil</x:String>
+                <x:String>Canada</x:String>
+                <x:String>Cyprus (Anglicized)</x:String>
+                <x:String>Cyprus (Greek)</x:String>
+                <x:String>Czech Republic</x:String>
+                <x:String>Denmark</x:String>
+                <x:String>Estonia</x:String>
+                <x:String>Finland</x:String>
+                <x:String>France</x:String>
+                <x:String>Germany</x:String>
+                <x:String>Greenland</x:String>
+                <x:String>Hungary</x:String>
+                <x:String>Iceland</x:String>
+                <x:String>Italy</x:String>
+                <x:String>Netherlands</x:String>
+                <x:String>New Zealand</x:String>
+                <x:String>Norway</x:String>
+                <x:String>Poland</x:String>
+                <x:String>Portugal</x:String>
+                <x:String>Slovenia</x:String>
+                <x:String>South Africa</x:String>
+                <x:String>Spain</x:String>
+                <x:String>Sweden</x:String>
+                <x:String>Switzerland</x:String>
+                <x:String>Tunisia</x:String>
+                <x:String>United Kingdom</x:String>
+                <x:String>United States</x:String>
+                <x:String>Uruguay</x:String>
+              </scg:List>
+            </ui:SelectItem.Items>
+            <ui:SelectItem.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="426856df-41fe-4f9a-a30f-52c943cfd0b0" InformativeScreenshot="be5110a2a173b3ad21b6e6da86bac4ad" Selector="[&quot;&lt;webctrl id='c' tag='SELECT' /&gt;&lt;webctrl tag='OPTION' aaname='&quot;+RandomCountry+&quot;' /&gt;&quot;]">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:SelectItem.Target>
+          </ui:SelectItem>
+          <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click to generate result" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="47a86510-fa93-4e94-baff-3a4cfa0150ee" InformativeScreenshot="642680bbba440ab1af2b19387f111bbd" Selector="&lt;webctrl tag='INPUT' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Read_Random_Values_To_Excel workflow" sap:VirtualizedContainerService.HintSize="359,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Read_Random_Values_To_Excel.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_RandomGend">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RandomGend" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_RandomNameSet">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RandomNameSet" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_RandomCountry">
+                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RandomCountry" />
+              </InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </ActivityAction>
+    </ui:OpenBrowser.Body>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+  </ui:OpenBrowser>
+</Activity>
